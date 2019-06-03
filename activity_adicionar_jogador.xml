@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.soccerpoints.meuprojeto.soccerpoints.AdicionarJogador">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="41dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:text="Nome:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:text="Posição:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_below="@+id/nomeId"
+        android:layout_alignLeft="@+id/nomeId"
+        android:layout_alignStart="@+id/nomeId"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:id="@+id/nomeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/posicaoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingBottom="8dp"
+        android:paddingTop="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Adiciona aqui o nome do jogador e sua posição!"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/adicionarJogadorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/posicaoId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/botaoadicionarjogador" />
+
+</RelativeLayout>
